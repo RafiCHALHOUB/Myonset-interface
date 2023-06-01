@@ -109,7 +109,7 @@ class The_Model():
 
     # def get_channel_indices(self, selected_channels: object) -> object:
 
-    def detectemg(self, selected_channels, onset, offset):
+    def detect_emg(self, selected_channels, onset, offset):
         data_raw = self.raw.get_data(picks=selected_channels)
         data_epochs = self.epochs_events.get_data(data_raw)
         thEMG_raw = 8
