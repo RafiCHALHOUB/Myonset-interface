@@ -51,7 +51,7 @@ class TheController:
         self.model.detect_force(selected_channels, onset, offset, peak)
 
     def detect_emg(self, selected_channels, onset, offset):
-        self.model.detectemg(selected_channels, onset, offset)
+        self.model.detect_emg(selected_channels, onset, offset)
 
     def viz(self, code_t0, tmin, tmax, onset, offset):
         self.model.viz(code_t0, tmin, tmax, onset, offset)
